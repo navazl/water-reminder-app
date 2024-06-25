@@ -1,0 +1,77 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #121212;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    color: #e0e0e0;
+}
+
+.container {
+    text-align: center;
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #bb86fc;
+}
+
+#timer {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #bb86fc;
+    font-weight: bold;
+}
+
+#reminderCountdown, #finalWarningMessage {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+#reminderCountdown {
+    color: #cf6679;
+    font-weight: bold;
+}
+
+#finalWarningMessage {
+    color: #cf6679;
+    animation: shake 0.5s infinite;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    background-color: #bb86fc;
+    color: #121212;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #985eff;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
